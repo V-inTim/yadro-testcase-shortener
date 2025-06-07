@@ -1,0 +1,187 @@
+{
+	"info": {
+		"_postman_id": "786fe855-6c12-4d6d-8f30-5969d73729ad",
+		"name": "yadro-testcase",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37753324"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pass1234",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "john",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"original_link\": \"https://www.kinopoisk.ru/lists/movies/country--8/?sort=votes&b=series&b=top&utm_referrer=www.google.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/shorten/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"shorten",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pass1234",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "john",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"original_link\": \"https://nn.hh.ru/vacancy/121222217?from=applicant_recommended&hhtmFrom=main\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/b76073ee-e96e-4f89-8673-6794fd67fe66/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"b76073ee-e96e-4f89-8673-6794fd67fe66",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pass1234",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "john",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"original_link\": \"https://nn.hh.ru/vacancy/121222217?from=applicant_recommended&hhtmFrom=main\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/list/?is_active=true&ordering=clicks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"list",
+						""
+					],
+					"query": [
+						{
+							"key": "is_active",
+							"value": "true"
+						},
+						{
+							"key": "ordering",
+							"value": "clicks"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pass1234",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "john",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/deactivate/adfba4f4-6461-43ed-8d34-708297dcb7e1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"deactivate",
+						"adfba4f4-6461-43ed-8d34-708297dcb7e1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
