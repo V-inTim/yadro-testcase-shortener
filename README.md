@@ -4,11 +4,11 @@
 Django, DRF, Postgres
 
 ## Запуск программы с помощью docker-compose
-
+в корне проекта
 `docker-compose up -d`
 
 ## API
-openapi по запросу http:/localhost:8000/docs/
+OpenAPI по запросу http:/localhost:8000/docs/
 Коллекции postman в файле yadro-testcase.postman_collection.json
 ## Дополнительно 
 - Код написан с flake8 (конфигурация прописана в setup.cfg)
