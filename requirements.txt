@@ -6,3 +6,4 @@ psycopg2-binary
 environ
 flake8
 drf-spectacular
+gunicorn
